@@ -1,10 +1,15 @@
 package com.example.factorymethod.ways;
 
+import com.example.abstractfactory.ways.Anchor;
+import com.example.abstractfactory.ways.Wheel;
+
 public class Ship {
 
 	private String name;
 	private String color;
 	private String logo;
+	private Anchor anchor;
+	private Wheel wheel;
 
 	public String getName() {
 		return name;
@@ -28,6 +33,22 @@ public class Ship {
 
 	public void setLogo(String logo) {
 		this.logo = logo;
+	}
+
+	public Anchor getAnchor() {
+		return anchor;
+	}
+
+	public void setAnchor(Anchor anchor) {
+		this.anchor = anchor;
+	}
+
+	public Wheel getWheel() {
+		return wheel;
+	}
+
+	public void setWheel(Wheel wheel) {
+		this.wheel = wheel;
 	}
 
 	@Override
